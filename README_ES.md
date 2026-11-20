@@ -10,7 +10,21 @@ Curso la **Maestría en Ingeniería Electrónica en la Universidad Nacional de C
 
 ## Proyectos destacados
 
-Son proyectos académicos colaborativos. Cada repositorio documenta el desarrollo, los resultados disponibles, las limitaciones y los créditos del equipo.
+La selección incluye proyectos académicos colaborativos y mi continuación independiente de CyclingSafety. Cada repositorio documenta el desarrollo, la evaluación, las limitaciones y los créditos del equipo original.
+
+### [Cycling Safety ML — Aprendizaje automático reproducible con sensores](https://github.com/Andres-Vallejo/cycling-safety-ml)
+
+Continuación independiente de nuestro proyecto académico CyclingSafety, con procesamiento de señales reconstruido y evaluación sobre grabaciones completas fuera del entrenamiento.
+
+[![Comparación de modelos y matriz de confusión del MLP](https://raw.githubusercontent.com/Andres-Vallejo/cycling-safety-ml/main/reports/grouped-mlp/evaluation.png)](https://github.com/Andres-Vallejo/cycling-safety-ml#evaluation)
+
+**Python · PyTorch · scikit-learn · Series temporales IMU · FastAPI · Pruebas automatizadas**
+
+**Mi continuación:** reconstrucción del procesamiento y etiquetado de ventanas, evaluación agrupada, nuevo entrenamiento de MLP/CNN, inferencia portable y API local. El experimento utiliza **9.453 ventanas de 11 grabaciones**, con separación por grabación y predicciones auditables. Incluye pruebas automatizadas, CI y configuración de Docker.
+
+El proyecto académico original se desarrolló con **Andrés Felipe Rojas Aguilar, Brayan Camilo Rodríguez Diaz y Carlos David Ramírez Muñoz**. Mi aporte original fue construir el modelo y realizar el entrenamiento preliminar. La continuación conserva los créditos del equipo y la licencia MIT; sus informes explican las limitaciones de la colección de datos.
+
+[Código y resultados nuevos](https://github.com/Andres-Vallejo/cycling-safety-ml) · [Evaluación CNN](https://github.com/Andres-Vallejo/cycling-safety-ml/blob/main/reports/grouped-cnn/REPORT.md) · [Proyecto original y mapas](https://github.com/Andres-Vallejo/CyclingSafety) · [Créditos y procedencia](https://github.com/Andres-Vallejo/cycling-safety-ml/blob/main/AUTHORS.md)
 
 ### [Mapeo semántico 3D con ZED y YOLO11](https://github.com/Andres-Vallejo/zed-semantic-3d-mapping)
 
@@ -23,18 +37,6 @@ Reconocimiento de objetos de laboratorio y ubicación en una escena 3D reconstru
 Soy coautor de este proyecto de equipo. Incluye reconstrucción fuera de línea, modelos entrenados, procesamiento geométrico y demostraciones en vídeo.
 
 [Código y metodología](https://github.com/Andres-Vallejo/zed-semantic-3d-mapping) · [Vídeos](https://github.com/Andres-Vallejo/zed-semantic-3d-mapping#watch-the-project) · [Equipo](https://github.com/Andres-Vallejo/zed-semantic-3d-mapping/blob/main/AUTHORS.md)
-
-### [CyclingSafety — Clasificación de eventos con sensores](https://github.com/Andres-Vallejo/CyclingSafety)
-
-Clasificación de señales de movimiento con modelos MLP y CNN 1D, y asociación de las predicciones con GPS para su visualización en mapas.
-
-[![Vista espacial de las predicciones guardadas](https://raw.githubusercontent.com/Andres-Vallejo/CyclingSafety/main/media/prediction-locations.png)](https://github.com/Andres-Vallejo/CyclingSafety#from-predictions-to-locations)
-
-**Python · TensorFlow/Keras · Series temporales IMU · TensorFlow Lite · ESP32**
-
-**Mi aporte:** construcción del modelo y entrenamiento preliminar, que luego utilizó un compañero para elaborar los mapas. Incluye modelos, vistas estáticas, mapas HTML interactivos y un nodo TinyML experimental. La revisión técnica explica la fuga de datos de la partición original.
-
-[Código y resultados](https://github.com/Andres-Vallejo/CyclingSafety) · [Galería](https://github.com/Andres-Vallejo/CyclingSafety/blob/main/docs/GALLERY.md) · [Equipo](https://github.com/Andres-Vallejo/CyclingSafety/blob/main/AUTHORS.md)
 
 ### [Agricultura de precisión — IoT y gemelo digital](https://github.com/Andres-Vallejo/precision-agriculture-iot-digital-twin)
 
@@ -52,11 +54,11 @@ Integración de mediciones simuladas de cultivo, comunicación MQTT y un tablero
 
 | Área | Herramientas y métodos utilizados en estos proyectos |
 |---|---|
-| Aprendizaje automático | TensorFlow/Keras, MLP, CNN 1D, entrenamiento y evaluación |
+| Aprendizaje automático | PyTorch, TensorFlow/Keras, scikit-learn, MLP, CNN 1D, evaluación agrupada |
 | Visión por computador | Ultralytics YOLO, profundidad estéreo, nubes de puntos, Open3D |
 | Datos y señales | Python, NumPy, pandas, scikit-learn, preprocesamiento IMU |
 | Sistemas embebidos e IoT | ESP32, Arduino/C++, TensorFlow Lite, MQTT, JSON |
-| Colaboración | Git/GitHub, notebooks y documentación técnica |
+| Software y colaboración | FastAPI, pruebas automatizadas, GitHub Actions, configuración de Docker, Git/GitHub |
 
 ## Contacto
 
